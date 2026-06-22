@@ -4,7 +4,7 @@
 
 A full-stack call-logging web application built with Django
 
-_Initiate calls between numbers, persist every call with validation, and generate per-number call-history reports._
+Initiate calls between numbers, persist every call with validation, and generate per-number call-history reports
 
 <br>
 
@@ -25,6 +25,16 @@ It's a compact, end-to-end demonstration of the Django request/response cycle: *
 
 <br>
 
+## 🌟 Key Highlights
+
+- 🏗️ **Clean and modular architecture** — a Django project package (`CallCentre`) paired with a dedicated, reusable app (`CallLog`).
+- 🔄 **End-to-end request lifecycle** — from URL routing to validation, ORM persistence, and templated rendering.
+- 🔎 **Smart history lookups** — multi-field `OR` queries with Django's `Q` objects surface every call a number was part of, in either direction.
+- 🛡️ **Defensive by design** — server-side validation guards the database against malformed or invalid input.
+- ⚡ **Zero external setup** — runs out of the box on SQLite with a single `runserver` command.
+
+<br>
+
 ## 🛠️ Tech Stack
 
 | Layer         | Technology                                 |
@@ -33,17 +43,6 @@ It's a compact, end-to-end demonstration of the Django request/response cycle: *
 | **Framework** | Django 4.1.6                               |
 | **Database**  | SQLite3                                    |
 | **Frontend**  | Django Template Language (DTL), HTML5, CSS |
-
-<br>
-
-## 🚀 Skills Demonstrated
-
-- 🏗️ **Project architecture** — clean separation of a Django project package (`CallCentre`) and a reusable app (`CallLog`)
-- ⚙️ **Function-based views** — handling both `GET` and `POST` requests
-- 🗄️ **ORM & data modeling** — defining models and persisting/querying records without raw SQL
-- 🔎 **Advanced queries** — multi-field `OR` lookups using Django's `Q` objects
-- ✅ **Input validation** — defensive server-side checks with Python's `re` module
-- 🎨 **Templating** — dynamic rendering with `{% if %}` / `{% for %}` and CSRF protection
 
 <br>
 
@@ -61,7 +60,7 @@ It's a compact, end-to-end demonstration of the Django request/response cycle: *
 
 <br>
 
-## ⚡ Quick Start
+## ⚡ Getting Started
 
 ```bash
 # 1. Clone the repository
@@ -89,6 +88,18 @@ Then open **http://127.0.0.1:8000/** in your browser — use the home page to in
 
 <br>
 
+## 📚 What I Learned
+
+- 🏗️ **Structuring a Django project** — separating a project package from a reusable app and understanding how the two fit together.
+- 🔀 **URL routing** — wiring routes at both the project and app level using `include()` and named routes (`{% url '...' %}`).
+- ⚙️ **Function-based views** — handling `GET` and `POST` requests and reading data from `request.POST` / `request.GET`.
+- 🗄️ **The Django ORM** — modeling data and persisting/querying records without writing raw SQL.
+- 🔎 **Complex queries** — combining conditions across multiple fields with `Q` objects.
+- ✅ **Server-side validation** — applying defensive checks with Python's `re` module and feeding errors back to the user.
+- 🎨 **Templating** — rendering dynamic content with `{% if %}` / `{% for %}` and securing forms with `{% csrf_token %}`.
+
+<br>
+
 ## 🌱 Future Improvements
 
 - **🧾 Form handling** — migrate manual `request.POST[...]` access to Django `Form`/`ModelForm` classes for cleaner, safer validation.
@@ -104,6 +115,6 @@ Then open **http://127.0.0.1:8000/** in your browser — use the home page to in
 
 <div align="center">
 
-⭐ If you found this project useful, consider giving it a star!
+⭐ _If you found this project helpful or interesting, consider giving it a star!_ ⭐
 
 </div>
