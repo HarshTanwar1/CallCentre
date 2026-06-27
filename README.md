@@ -37,7 +37,7 @@ It's a compact, end-to-end demonstration of the Django request/response cycle: *
 
 ## 🛠️ Tech Stack
 
-| Layer         | Technology                                 |
+| Layer         | Technologies                               |
 | ------------- | ------------------------------------------ |
 | **Language**  | Python 3.10.10                             |
 | **Framework** | Django 4.1.6                               |
@@ -50,9 +50,9 @@ It's a compact, end-to-end demonstration of the Django request/response cycle: *
 
 - **📲 Initiate a call** — submit a _from_ and _to_ number to create a call record.
 - **🛡️ Robust server-side validation** before any data is saved:
-  - rejects numbers shorter than 10 digits
-  - rejects numbers containing non-numeric characters
-  - guards against a number calling itself
+  - rejects numbers shorter than 10 digits.
+  - rejects numbers containing non-numeric characters.
+  - guards against a number calling itself.
 - **💾 Persistent call log** — every valid call is auto-timestamped and stored.
 - **📊 Call report generation** — look up any number and retrieve every call where it appears as the **caller or recipient**, powered by a `Q` object query.
 - **💬 Instant user feedback** — validation errors surface directly to the user.
