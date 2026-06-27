@@ -62,29 +62,45 @@ It's a compact, end-to-end demonstration of the Django request/response cycle: *
 
 ## ⚡ Getting Started
 
+### 1. Clone the repository
+
 ```bash
-# 1. Clone the repository
 git clone https://github.com/HarshTanwar1/CallCentre.git
 cd CallCentre
+```
 
-# 2. (Recommended) Create and activate a virtual environment
+### 2. Create and activate a virtual environment _(recommended)_
+
+```bash
 python -m venv venv
 source venv/bin/activate          # Windows: venv\Scripts\activate
+```
 
-# 3. Install Django
+### 3. Install Django
+
+```bash
 pip install django==4.1.6
+```
 
-# 4. Apply database migrations
+### 4. Apply database migrations
+
+```bash
 python manage.py migrate
+```
 
-# 5. (Optional) Create an admin user for /admin/
+### 5. Create an admin user _(optional — for access to `/admin/`)_
+
+```bash
 python manage.py createsuperuser
+```
 
-# 6. Run the development server
+### 6. Run the development server
+
+```bash
 python manage.py runserver
 ```
 
-Then open **http://127.0.0.1:8000/** in your browser — use the home page to initiate calls and the report page to look up a number's history.
+Then open the app at **http://127.0.0.1:8000/** in your browser — use the home page to initiate calls and the report page to look up a number's history.
 
 <br>
 
